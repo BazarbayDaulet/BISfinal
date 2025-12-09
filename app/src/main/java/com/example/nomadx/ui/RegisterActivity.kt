@@ -21,11 +21,11 @@ class RegisterActivity : AppCompatActivity() {
         val etEmail = findViewById<EditText>(R.id.etEmail)
         val etPass = findViewById<EditText>(R.id.etPassword)
 
-        findViewById<Button>(R.id.btnRegister).setOnClickListener { // ID кнопки btnRegister
+        findViewById<Button>(R.id.btnRegister).setOnClickListener {
             vm.register(etEmail.text.toString(), etPass.text.toString())
         }
 
-        findViewById<TextView>(R.id.tvToRegister).setOnClickListener { // Текст "Уже есть аккаунт"
+        findViewById<TextView>(R.id.tvToRegister).setOnClickListener {
             finish()
         }
 
