@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "NomadX1"
+rootProject.name = "nomadx"
 include(":app")
  

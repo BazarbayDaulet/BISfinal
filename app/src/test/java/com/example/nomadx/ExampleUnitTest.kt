@@ -1,4 +1,4 @@
-package com.example.nomadx1
+package com.example.nomadx
 
 import org.junit.Test
 

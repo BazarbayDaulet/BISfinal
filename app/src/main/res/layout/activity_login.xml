@@ -9,7 +9,7 @@
         android:id="@+id/tvLogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="NomadX"
+        android:text="NomadQ"
         android:textColor="@color/white"
         android:textSize="40sp"
         android:textStyle="bold"
@@ -84,7 +84,7 @@
                 android:id="@+id/tvToRegister"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Still dont have account? Register"
+                android:text="Нет аккаунта? Регистрация"
                 android:gravity="center"
                 android:textColor="@color/gray"
                 android:textSize="14sp"/>
