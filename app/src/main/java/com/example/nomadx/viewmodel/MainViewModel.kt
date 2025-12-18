@@ -21,6 +21,7 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
     val registerResult = MutableLiveData<Boolean>()
     val errorMsg = MutableLiveData<String>()
 
+    val userAvatar = MutableLiveData<String?>()
     fun login(email: String, pass: String) {
         viewModelScope.launch {
             val user = dao.login(email, pass)
@@ -43,6 +44,7 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
             }
         }
     }
+
 
     fun addPost(title: String, desc: String, price: Double) {
         val email = session.getEmail()

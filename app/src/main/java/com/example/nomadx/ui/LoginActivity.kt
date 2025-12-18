@@ -7,22 +7,33 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.viewModels
-import androidx.appcompat.app.AppCompatActivity
 import com.example.nomadx.R
+import com.example.nomadx.utils.LocaleHelper
 import com.example.nomadx.viewmodel.MainViewModel
 
-class LoginActivity : AppCompatActivity() {
+class LoginActivity : BaseActivity() {
     private val vm: MainViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
 
         if (vm.isLogged()) {
             startActivity(Intent(this, MainActivity::class.java))
             finish()
             return
         }
+
         setContentView(R.layout.activity_login)
+
+
+        findViewById<Button>(R.id.btnRu).setOnClickListener {
+            setAppLocale("ru")
+        }
+        findViewById<Button>(R.id.btnEn).setOnClickListener {
+            setAppLocale("en")
+        }
+
 
         val etEmail = findViewById<EditText>(R.id.etEmail)
         val etPass = findViewById<EditText>(R.id.etPassword)
@@ -40,6 +51,14 @@ class LoginActivity : AppCompatActivity() {
             finish()
         }
 
-        vm.errorMsg.observe(this) { Toast.makeText(this, it, Toast.LENGTH_SHORT).show() }
+        vm.errorMsg.observe(this) {
+
+            Toast.makeText(this, getString(R.string.error_login), Toast.LENGTH_SHORT).show()
+        }
+    }
+
+    private fun setAppLocale(code: String) {
+        LocaleHelper.setLocale(this, code)
+        recreate()
     }
 }

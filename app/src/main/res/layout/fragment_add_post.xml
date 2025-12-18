@@ -1,26 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="24dp"
-    android:background="@color/white">
+    android:padding="24dp">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Новое объявление"
+        android:text="@string/label_new_post"
         android:textSize="24sp"
         android:textStyle="bold"
         android:textColor="@color/primary"
         android:layout_marginBottom="24dp"/>
 
-
+    <!-- Поле Название -->
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Название товара">
+        android:hint="@string/hint_title">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etTitle"
@@ -28,12 +26,12 @@
             android:layout_height="wrap_content"/>
     </com.google.android.material.textfield.TextInputLayout>
 
-
+    <!-- Поле Цена -->
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:hint="Цена (₸)">
+        android:hint="@string/hint_price">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etPrice"
@@ -42,29 +40,24 @@
             android:inputType="numberDecimal"/>
     </com.google.android.material.textfield.TextInputLayout>
 
-
+    <!-- Поле Описание -->
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:hint="Описание">
+        android:hint="@string/hint_desc">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etDesc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="top"
-            android:lines="4"/>
+            android:lines="3"/>
     </com.google.android.material.textfield.TextInputLayout>
 
-
-    <com.google.android.material.button.MaterialButton
+    <Button
         android:id="@+id/btnSave"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:text="Опубликовать"
-        android:textSize="16sp"
-        app:cornerRadius="12dp"
-        android:layout_marginTop="32dp"/>
-
+        android:text="@string/btn_publish"
+        android:layout_marginTop="24dp"/>
 </LinearLayout>

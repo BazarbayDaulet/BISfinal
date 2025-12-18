@@ -1,3 +1,28 @@
 <resources>
-    <string name="app_name">nomadx</string>
+    <string name="app_name">NomadQ</string>
+    <string name="login_title">Login</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="login_btn">Sign In</string>
+    <string name="no_account">No account? Register</string>
+
+    <string name="register_title">Registration</string>
+    <string name="register_btn">Create Account</string>
+    <string name="have_account">Already have an account? Sign In</string>
+
+    <string name="label_new_post">New Listing</string>
+    <string name="hint_title">Title</string>
+    <string name="hint_price">Price</string>
+    <string name="hint_desc">Description</string>
+    <string name="btn_publish">Publish</string>
+
+    <string name="change_lang">Change Language</string>
+    <string name="btn_logout">Log Out</string>
+
+    <string name="nav_feed">Feed</string>
+    <string name="nav_add">Add</string>
+    <string name="nav_profile">Profile</string>
+    <string name="success_register">Success! Now log in.</string>
+    <string name="error_user_exists">User already exists</string>
+    <string name="error_login">Invalid login or password</string>
 </resources>

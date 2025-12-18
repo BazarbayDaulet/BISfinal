@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">NomadQ</string>
+    <string name="login_title">Вход</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Пароль</string>
+    <string name="login_btn">Войти</string>
+    <string name="no_account">Нет аккаунта? Регистрация</string>
+
+    <string name="register_title">Регистрация</string>
+    <string name="register_btn">Создать аккаунт</string>
+    <string name="have_account">Уже есть аккаунт? Войти</string>
+
+    <string name="label_new_post">Новое объявление</string>
+    <string name="hint_title">Название</string>
+    <string name="hint_price">Цена</string>
+    <string name="hint_desc">Описание</string>
+    <string name="btn_publish">Опубликовать</string>
+
+    <string name="change_lang">Сменить язык</string>
+    <string name="btn_logout">Выйти</string>
+
+    <string name="nav_feed">Лента</string>
+    <string name="nav_add">Добавить</string>
+    <string name="nav_profile">Профиль</string>
+    <string name="success_register">Успешно! Теперь войдите.</string>
+    <string name="error_user_exists">Пользователь уже существует</string>
+    <string name="error_login">Неверный логин или пароль</string>
+</resources>

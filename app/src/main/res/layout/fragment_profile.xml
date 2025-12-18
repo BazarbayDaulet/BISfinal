@@ -20,11 +20,39 @@
         android:textSize="20sp"
         android:textStyle="bold"/>
 
+    <!-- Смена языка -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/change_lang"
+        android:layout_marginTop="32dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="32dp">
+
+        <Button
+            android:id="@+id/btnRu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Русский"
+            android:layout_marginEnd="16dp"/>
+
+        <Button
+            android:id="@+id/btnEn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="English"/>
+    </LinearLayout>
+
     <Button
         android:id="@+id/btnLogout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Выйти"
-        android:layout_marginTop="32dp"
+        android:text="@string/btn_logout"
+        android:layout_marginTop="16dp"
         android:backgroundTint="@color/red"/>
 </LinearLayout>
